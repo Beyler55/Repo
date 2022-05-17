@@ -1,3 +1,55 @@
-sss
-ddd
-fff
+static void Main(string[] args)
+        {
+            Console.WriteLine(RevString());
+        }
+        static string RevString()
+        {
+            string space=" ";
+            string names = "Nurlan Faiq Emil Tural Yusif";
+            string[] spl = names.Split(' ');
+            string revname = "";
+            string temp = "";
+            foreach (var item in spl)
+            {
+
+                for (int i = item.Length - 1; i >= 0; i--)
+                {
+                    revname = revname + item[i];
+
+                }
+                
+
+            }
+             string[] split =  Regex.Split(str, @"[A-Z])");
+            return split;
+        }
+        
+        
+        ---------------------------------------------------------------------------------------------------
+        
+        
+         static void Main(string[] args)
+        {
+            Console.WriteLine(RevString());
+        }
+        static string RevString()
+        {
+            string space=" ";
+            string names = "Nurlan Faiq Emil Tural Yusif";
+            string[] spl = names.Split(' ');
+            string revname = "";
+            string temp = "";
+            foreach (var item in spl)
+            {
+
+                for (int i = item.Length - 1; i >= 0; i--)
+                {
+                    revname = revname + item[i];
+
+                }
+                
+
+            }
+            string[] split =  Regex.Split(str, @"(?<!^)(?=[A-Z])");
+            return split;
+        }
